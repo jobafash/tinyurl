@@ -1,0 +1,44 @@
+{
+  "name": "tinyurl",
+  "version": "1.0.0",
+  "description": "A minimalist url shortener",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobafash/tinyurl.git"
+  },
+  "keywords": [
+    "url",
+    "sys-design",
+    "test"
+  ],
+  "author": "Jobafash",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobafash/tinyurl/issues"
+  },
+  "homepage": "https://github.com/jobafash/tinyurl#readme",
+  "dependencies": {
+    "base58": "^2.0.1",
+    "body-parser": "^1.19.0",
+    "chai": "^4.3.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "redis": "^3.0.2",
+    "yargs": "^16.2.0"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "fakeredis": "^2.0.0",
+    "mocha": "^8.3.0",
+    "superagent": "^6.1.0",
+    "superagent-mocker": "^0.5.2"
+  }
+}

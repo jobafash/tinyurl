@@ -1,4 +1,4 @@
-#Tinyurl
+# Tinyurl
 
 > A simple URL shortener using [Node.js](http://nodejs.org) and [Redis](http://redis.io) for caching.
 
@@ -168,8 +168,8 @@ $ npm install
 $ npm test
 ```
 
-P.S. npm test will run `mocha`
-27 tests
+P.S. npm test will run `mocha`: 27 tests in total
+![Tests](https://github.com/jobafash/tinyurl/blob/main/images/tests.png)
 
 ## License
 

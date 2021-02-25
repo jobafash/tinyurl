@@ -11,7 +11,7 @@ const addDays = (n) => {
   return date;
 }
 
-describe('Test Node Url Shortener Without Dates - RedisModel', () => {
+describe('Test TinyURL Without Dates - RedisModel', () => {
   let redis
     , prefix
     , long_url
@@ -175,7 +175,7 @@ describe('Test Node Url Shortener Without Dates - RedisModel', () => {
 });
 
 
-describe('Test Node Url Shortener With Dates - RedisModel', () => {
+describe('Test TinyURL With Dates - RedisModel', () => {
   let redis
     , prefix
     , long_url

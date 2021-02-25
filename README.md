@@ -15,7 +15,9 @@ URL shortening is a way to convert a long URL (site or page address) to a shorte
 This project creates a short url from the long url and also returns the original url of a short url. This link can also be copied and pasted from the user-facing side at '{{URL}}/' and expire after a given timespan.
 
 #### The service is able to store “enough” urls in a .rdb file
+
 #### The service should handle a huge number of requests per second
+
 #### 90 percent of all request should respond in less than 10ms for the read request
 
 Our system will be read-heavy. There will be lots of redirection requests compared to new URL shortenings. Let’s assume a 300:1 ratio between read and write.
@@ -178,7 +180,7 @@ $ npm test
 
 ###P.S. npm test will run `mocha`: 27 tests in total
 
-![Tests](https://github.com/jobafash/tinyurl/blob/main/images/tests.png)
+![Test](https://github.com/jobafash/tinyurl/blob/main/images/tests.png)
 
 ## License
 

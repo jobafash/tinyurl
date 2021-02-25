@@ -178,7 +178,7 @@ $ npm install
 $ npm test
 ```
 
-###P.S. npm test will run `mocha`: 27 tests in total
+### P.S. npm test will run `mocha`: 27 tests in total
 
 ![Test](https://github.com/jobafash/tinyurl/blob/main/images/tests.png)
 

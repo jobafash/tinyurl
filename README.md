@@ -2,6 +2,7 @@
 
 > A simple URL shortener using [Node.js](http://nodejs.org) and [Redis](http://redis.io) for caching.
 
+[![Build Status](https://api.travis-ci.com/jobafash/tinyurl.svg?branch=main&status=passed)](https://travis-ci.com/github/jobafash/tinyurl)
 [![GitHub tag](https://img.shields.io/badge/test-1.0.0-success)](https://github.com/jobafash/tinyurl)
 
 ## Using
@@ -13,9 +14,9 @@ URL shortening is a way to convert a long URL (site or page address) to a shorte
 
 This project creates a short url from the long url and also returns the original url of a short url. This link can also be copied and pasted from the user-facing side at '{{URL}}/' and expire after a given timespan.
 
-The service is able to store “enough” urls in a .rdb file
-The service should handle a huge number of requests per second
-90 percent of all request should respond in less than 10ms for the read request
+####The service is able to store “enough” urls in a .rdb file
+####The service should handle a huge number of requests per second
+####90 percent of all request should respond in less than 10ms for the read request
 
 Our system will be read-heavy. There will be lots of redirection requests compared to new URL shortenings. Let’s assume a 300:1 ratio between read and write.
 
@@ -23,7 +24,7 @@ Traffic estimates: Assuming, we will have 5 new URL shortenings per day(as speci
 
 What would be Queries Per Second (QPS) for our system? New URLs shortenings per day: 50
 
-Considering 30:1 read/write ratio, URLs redirections per second will be: 300 \* 50 = 15000 URLs
+Considering a 300:1 read/write ratio, URLs redirections per second will be: 300 \* 50 = 15000 URLs
 
 Storage estimates: Let’s assume we store every URL shortening request (and associated shortened link) for 5 years. Since we expect to have 15000 new URLs every month, the total number of objects we expect to store will be 7500: 15000 _ 5 years _ 12 months = 900000
 
@@ -159,6 +160,13 @@ OR if dates aren't set
 }
 ```
 
+![Test1](https://github.com/jobafash/tinyurl/blob/main/images/postman1.png)
+![Test2](https://github.com/jobafash/tinyurl/blob/main/images/postman2.png)
+![Test3](https://github.com/jobafash/tinyurl/blob/main/images/postman3.png)
+![Test4](https://github.com/jobafash/tinyurl/blob/main/images/postman4.png)
+![Test5](https://github.com/jobafash/tinyurl/blob/main/images/postman5.png)
+![Test6](https://github.com/jobafash/tinyurl/blob/main/images/postman6.png)
+
 ## Tests
 
 To run the test suite, first install the dependencies, then run `npm test`:
@@ -168,7 +176,8 @@ $ npm install
 $ npm test
 ```
 
-P.S. npm test will run `mocha`: 27 tests in total
+###P.S. npm test will run `mocha`: 27 tests in total
+
 ![Tests](https://github.com/jobafash/tinyurl/blob/main/images/tests.png)
 
 ## License
